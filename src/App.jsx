@@ -12,12 +12,12 @@ function App() {
         <Routes>
           <Route path='/login' element={<Login/>}/>
           <Route path='/register' element={<Register/>}/>
-          <Route element={<ProtectedRoutes/>} >
+          {/* <Route element={<ProtectedRoutes/>} > */}
             <Route path='/' element={<Ciudades/>}/>
-            <Route path='/add-ciudades' element={<FormPage/>} />
-            <Route path='/ciudades/:id' element={<FormPage/>} />
+            <Route path='/add' element={<FormPage/>} />
+            <Route path='/editar' element={<FormPage/>} />
             <Route path='/eventos' element={<Eventos/>}/>
-          </Route>
+          {/* </Route> */}
 
         </Routes>
       </BrowserRouter>
