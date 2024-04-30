@@ -1,9 +1,9 @@
 import FormCiudad from "../../Components/FormCiudad"
 
-const Create = () => {
+const FormPage = () => {
   return (
      <FormCiudad title='Add Ciudad'></FormCiudad>
     )
 }
 
-export default Create
+export default FormPage

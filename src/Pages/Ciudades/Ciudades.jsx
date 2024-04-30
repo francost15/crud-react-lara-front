@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { confirmation, sendRequest } from "../../functions"
 import DivAdd from "../../Components/DivAdd"
 import { Link } from "react-router-dom"
-import { DivTable } from "../../Components"
+import DivTable from "../../Components/DivTable"
 
 export const Ciudades = () => {
   const [ciudades, setCiudades] = useState([])

@@ -1,11 +1,11 @@
-import { userParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import FormCiudad from '../../Components/FormCiudad';
 
-const Edit = () =>{
-    const {id} = userParams();
+const Edit = () => {
+    const { id } = useParams();
     return (
         <FormCiudad id={id} tittle='Edit Ciudad'></FormCiudad>
     )     
 }
 
-export default Edit
+export default Edit;

@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from 'react';
 import { useParams } from 'react-router-dom';
 import { sendRequest } from '../functions';
-import DivInput from './';
+import DivInput from './DivInput';
 
 export const FormCiudad = () => {
     const [name, setName] = useState('');

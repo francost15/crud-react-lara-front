@@ -37,3 +37,4 @@ export const confirmation= async (name,url,redir) => {
         }
     })
 }
+export default sendRequest

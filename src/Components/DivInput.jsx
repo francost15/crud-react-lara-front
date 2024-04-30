@@ -4,11 +4,10 @@ import {forwardRef,useEffect,useRef} from 'react'
 /* eslint-disable react-hooks/rules-of-hooks */
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react/prop-types */
-import { forwardRef, useEffect, useRef } from 'react';
 
 // eslint-disable-next-line react/display-name, react-refresh/only-export-components
 export default forwardRef(({ options=[], icon='user', placeholder='', 
-name, id, value, className, required, isFocused, handleChange }, ref) => {
+name, id, value, className, required, isFocused, handleChange,type }, ref) => {
     const input = ref ? ref : useRef(null); 
     useEffect(() => { 
         if (isFocused) { 
