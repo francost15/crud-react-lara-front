@@ -1,6 +1,10 @@
+import React from "react"
+import formCiudad from "../../Components/formCiudad"
 
-export const FormPage = () => {
+const Create = () => {
   return (
-    <div>FormPage</div>
-  )
+     <formCiudad id={null} tittle='Create Ciudad'></formCiudad>
+    )
 }
+
+export default Create
