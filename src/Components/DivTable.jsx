@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 export const DivTable = ({children, col, off, classLoad, classTable}) => {
     return (
       <div className="flex mt-3">

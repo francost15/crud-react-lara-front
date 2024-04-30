@@ -1,5 +1,4 @@
-import React from 'react' 
-
+/* eslint-disable react/prop-types */
 const Modal = ({ children, title, modal }) => {
     return (
         <div className='modal fade' id={modal} tabIndex='-1' aria-hidden='true'>

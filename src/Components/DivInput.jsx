@@ -1,8 +1,10 @@
+import {forwardRef,useEffect,useRef} from 'react'
+
 /* eslint-disable no-unused-vars */
 /* eslint-disable react-hooks/rules-of-hooks */
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react/prop-types */
-import { forwardRef, useEffect, useRef } from 'react'; 
+import { forwardRef, useEffect, useRef } from 'react';
 
 // eslint-disable-next-line react/display-name, react-refresh/only-export-components
 export default forwardRef(({ options=[], icon='user', placeholder='', 
@@ -18,13 +20,9 @@ name, id, value, className, required, isFocused, handleChange }, ref) => {
             <span className='input-group-text'>
                 <i className={'fa-solid '+icon}></i>
             </span>
-            <select name={name}
+            <input type={type} placeholder={placeholder} name={name}
             id={id} value={value} className={className} ref={input}
-            required={required} onChange={(e) => handleChange(e)} >
-                {options.map((op) => (
-                    <option value={op.id} key={op.id}>{op.name}</option>
-                ))}
-            </select>
+            required={required} onChange={(e) => handleChange(e)} />
         </div>
     )
 });

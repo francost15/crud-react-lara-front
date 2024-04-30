@@ -1,9 +1,8 @@
-import React from "react"
-import formCiudad from "../../Components/formCiudad"
+import FormCiudad from "../../Components/FormCiudad"
 
 const Create = () => {
   return (
-     <formCiudad id={null} tittle='Create Ciudad'></formCiudad>
+     <FormCiudad title='Add Ciudad'></FormCiudad>
     )
 }
 

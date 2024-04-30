@@ -1,11 +1,10 @@
-import React from "react";
 import { userParams } from 'react-router-dom';
-import formCiudad from "../../Components/formCiudad";
+import FormCiudad from '../../Components/FormCiudad';
 
 const Edit = () =>{
     const {id} = userParams();
     return (
-        <formCiudad id={id} tittle='Edit Ciudad'></formCiudad>
+        <FormCiudad id={id} tittle='Edit Ciudad'></FormCiudad>
     )     
 }
 
