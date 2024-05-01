@@ -13,15 +13,15 @@ export const Login = () => {
   const [email,setEmail] = useState('');
   const [password, setPassword] = useState('');
   const go = useNavigate();
-  const crsf = async() => {
-    await axios.get('/sanctum/crsf-cookie');
+  const csrf = async() => {
+    await axios.get('/sanctum/csrf-cookie');
   }
   const login = async(e)=> {
     e.preventDefault();
-    await crsf();
+    await csrf();
     const form = {email: email, password: password};
     const res = await sendRequest('POST',form,'/api/auth/login','',false);
-    if (res.status == true){
+    if (res && res.status == true){
       storage.set('authToken',res.data.token);
       storage.set('authUser',res.data.user);
       go('/');

@@ -10,12 +10,12 @@ export const Register = () => {
   const [email,setEmail] = useState('');
   const [password, setPassword] = useState('');
   const go = useNavigate();
-  const crsf = async() => {
-    await axios.get('/sanctum/crsf-cookie');
+  const csrf = async() => {
+    await axios.get('/sanctum/csrf-cookie');
   }
   const register = async(e)=> {
     e.preventDefault();
-    await crsf();
+    await csrf();
     const form = {name:name,email: email, password: password};
     const res = await sendRequest('POST',form,'/api/auth/register','',false);
     if (res.status == true){

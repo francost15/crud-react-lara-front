@@ -93,7 +93,7 @@ const Eventos = () => {
     return (
       <div className="container mx-auto px-4">
       <DivAdd>
-        <button className='btn btn-dark' data-bs-toggle='modal'
+        <button className='bg-black mr-3 ' data-bs-toggle='modal'
         data-bs-target='#modalEventos' onClick={()=>openModal(1)}>
           <i className='fa-solid fa-circle-plus'></i> Add
         </button>

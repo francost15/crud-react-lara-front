@@ -12,7 +12,7 @@ export const Ciudades = () => {
     getCiudades();
   }, []);
   const getCiudades = async() =>{
-    const res = await sendRequest('GET',{},'/api/ciudades');
+    const res = await sendRequest('GET','','/api/ciudades');
     setCiudades(res);
     setClassTable('');
     setClassLoad('d-none');

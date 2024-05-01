@@ -22,8 +22,8 @@ function App() {
           <Route path='/register' element={<Register/>}/>
           <Route element={<ProtectedRoutes/>} >
             <Route path='/' element={<Ciudades/>}/>
-            <Route path='/add' element={<FormPage/>} />
-            <Route path='/editar' element={<Edit/>} />
+            <Route path='/create' element={<FormPage/>} />
+            <Route path='/edit/:id' element={<Edit/>} />
             <Route path='/eventos' element={<Eventos/>}/>
           </Route>
 
